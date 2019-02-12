@@ -1,9 +1,7 @@
 package basics
 
-class Entity {
-  private var x = 0.0
-  private var y = 0.0
-  private var width = 1.0
+class Entity(private var x:Double = 0.0, private var y:Double = 0.0)  {
+  private var width = 1.0;
   private var height = 1.0
   
   def intersects(e:Entity): Boolean = {
@@ -14,9 +12,11 @@ class Entity {
 }
 
 object Entity {
-  def main(args: Array[String]):Unit {
-    val e1 = new Entity
-    val e2 = new Entity
+  def main(args: Array[String]): Unit = {
+    val e1 = new Entity(0,0)
+    val e2 = new Entity(0,0)
     println(e1.intersects(e2))
+    val e3= new Entity(10,0)
+    println(e1.intersects(e3))
   }
 }
