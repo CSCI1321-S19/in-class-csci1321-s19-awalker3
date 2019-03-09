@@ -1,1 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<drawing>
+	<drawable type="transform" transType="translate" value1="0.0" value2="0.0" >
+		<drawable type="rectangle" x="0" y="0" width="100" height="200"> 
+			<color red="0.0" green="0.0" blue="1.0" />
+			Text?
+			<!--  This is a comment -->
+		</drawable>
+	</drawable>
+</drawing>
