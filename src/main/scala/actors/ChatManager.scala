@@ -24,10 +24,10 @@ object ChatManager {
 
 
 import akka.actor.Actor
+import akka.actor.Props
 import java.io.PrintStream
 import java.io.BufferedReader
 import java.net.Socket
-import akka.actor.Props
 
 class ChatManager extends Actor {
   import ChatManager._
