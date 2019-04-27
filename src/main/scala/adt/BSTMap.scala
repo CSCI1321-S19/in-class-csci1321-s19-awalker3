@@ -60,32 +60,32 @@ class BSTMap[K, V](lt: (K, K) => Boolean) extends mutable.Map[K, V] {
   }
 
   // Members declared in scala.collection.mutable.MapLike
-  def -=(key: K): this.type = {
-    def removeNode(n: Node[K, V]): Node[K, V] = {
-      if (n == null) n
-      else {
-        if (lt(key, n.key)) {
-          n.left = removeNode(n.left)
-          n
-        } else if (lt(n.key, key)) {
-          n.right = removeNode(n.right)
-          n
-        } else {
-          if (n.left == null) n.right
-          else if (n.right == null) n.left
-          else {
-            if (n.left.right == null) {
-              n.left.right = n.right
-              n.left
-            } else {
-              //helper function goes here
-              ???
-            }
-          }
-        }
-
-      }
-    }
+  def -=(key: K): this.type = { ???
+//    def removeNode(n: Node[K, V]): Node[K, V] = {
+//      if (n == null) n
+//      else {
+//        if (lt(key, n.key)) {
+//          n.left = removeNode(n.left)
+//          n
+//        } else if (lt(n.key, key)) {
+//          n.right = removeNode(n.right)
+//          n
+//        } else {
+//          if (n.left == null) n.right
+//          else if (n.right == null) n.left
+//          else {
+//            if (n.left.right == null) {
+//              n.left.right = n.right
+//              n.left
+//            } else {
+//              //helper function goes here
+//              ???
+//            }
+//          }
+//        }
+//
+//      }
+//    }
   }
   def +=(kv: (K, V)): this.type = {
     def addNode(n: Node[K, V]): Node[K, V] = {
